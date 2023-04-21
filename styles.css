@@ -1,0 +1,70 @@
+#wiki {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.img img{
+  width: 200px;
+}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+.form {
+  width: 500px;
+  display: flex;
+}
+.form input {
+  width: 80%;
+}
+.search-btn {
+  width: 20%;
+}
+.error {
+  color: red;
+}
+.loading {
+  width: 80px;
+  height: 80px;
+  background-color: transparent;
+  border: 5px solid black;
+  border-top: 5px solid #fff;
+  border-radius: 50%;
+  animation:loading 2s linear infinite;
+}
+.search-link {
+  text-decoration: none;
+  display: block;
+  padding: 15px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.5);
+  border-radius: 20px;
+  background-color: #f5f4f4;
+}
+.title {
+  color: black;
+  font-size: 20px;
+}
+.desc {
+  color: black;
+  opacity: 0.8;
+  font-size: 17px;
+}
+.articles {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 30px;
+  width: 80%;
+  margin: 0 auto; 
+}
+@keyframes loading {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
